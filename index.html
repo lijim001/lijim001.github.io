@@ -8,5 +8,20 @@
 	
 	<h1>body</h1>
 
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>	
+<script type="javascript">
+$(function(){
+		$.ajax({
+			url:'http://libai.leanapp.cn/time',
+			success:function(data){
+				$("body").append($("h2").text(data))
+
+			}
+
+
+	})
+})	
+
+</script>
 </body>
 </html>
